@@ -1,0 +1,138 @@
+*, *:after, *:before {
+    box-sizing: border-box;
+    margin: 0;
+}
+  
+ul, ol, li, dl, dt, dd {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+input, textarea, button, a {
+    border: 0;
+    outline: none;
+}
+  
+body {
+    background: #fafafa;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #141414;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+.btn {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+}
+
+.btn-default {
+    border-radius: 2px;
+    background: #eee;
+    height: 55px;
+    line-height: 55px;
+    font-size: 13px;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+}
+
+.btn-more {
+    background:rgb(77, 223, 191);
+    width: 150px;
+    position: relative;
+    left: 50%;
+    margin-left: -75px;
+    cursor: pointer;
+
+    &[disabled] {
+        background: #eee;
+        cursor: not-allowed;
+    }
+}
+
+.link-default {
+  color: #0F0F0F;
+  text-decoration: none;
+  
+  &:hover,
+  &.router-link-active,
+  &.router-link-exact-active {
+    text-decoration: none;
+    color: #333;
+    cursor: pointer;
+  }
+}
+
+.link-btn {
+    padding: 6px 12px;
+    border-radius: 12px;
+    background: #52e48c;
+    color: #333;
+    text-transform: uppercase;
+    opacity: 1;
+    transition: .2s ease-in-out;
+
+    &:hover {
+        opacity: .5;
+    }
+}
+
+.img-round {
+    border-radius: 50%;
+    overflow: hidden;
+}
+  
+::-webkit-scrollbar {
+    width: 5px;
+    height: 1px;
+    background: #c4c4c4;
+}
+
+::-webkit-scrollbar-track {
+    background: #f2f2f2;
+}
+
+::-webkit-scrollbar-button {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #777;
+
+    &:hover {
+        background: #777;
+    }
+}
+
+.container {
+    max-width: 1280px;
+    min-width: 320px;
+    height: calc(100vh - 84px);
+    margin: 0 auto;
+}
+
+.icon-round {
+    font-family: Museo_500;
+    font-size: 9px;
+    line-height: 15px;
+    color: #CECECE;
+    display: inline-block;
+    margin-left: 6px;
+    border: 1px solid #e0e0e0;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
